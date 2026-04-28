@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>מיתוג מוצרי אריזה לעסקים | אופיר ספקים</title>
+  <meta name="description" content="אופיר ספקים מציעה פתרונות מיתוג לעסקים על קרטונים, סרטי הדבקה, שקיות ומעטפות שילוח, עם ניסיון של מעל 25 שנה ואספקה ארצית.">
+
+  <meta property="og:title" content="מיתוג מוצרי אריזה לעסקים | אופיר ספקים">
+  <meta property="og:description" content="פתרונות אריזה ממותגת לעסקים: קרטונים מודפסים, סרטי הדבקה, שקיות גופייה, מעטפות בלדרות ומוצרי שילוח נוספים.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#A7852F">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #A7852F;
+      --gold-dark: #7c611f;
+      --black: #111111;
+      --text: #222222;
+      --muted: #5f5f5f;
+      --light: #f7f4ed;
+      --cream: #fffaf0;
+      --white: #ffffff;
+      --border: rgba(167, 133, 47, 0.24);
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.10);
+      --shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.08);
+      --radius: 28px;
+      --radius-sm: 18px;
+      --focus: #005fcc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 19px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Heebo", Arial, sans-serif;
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.75;
+      font-size: 19px;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+      border-radius: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      right: 20px;
+      background: var(--black);
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: 12px;
+      z-index: 9999;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .skip-link:focus {
+      top: 20px;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(167, 133, 47, 0.18);
+    }
+
+    .header-inner {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 900;
+      color: var(--black);
+      font-size: 1.16rem;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #d8be72);
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-weight: 900;
+      box-shadow: 0 10px 25px rgba(167, 133, 47, 0.25);
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 700;
+      padding: 10px 13px;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .main-nav a:hover {
+      background: rgba(167, 133, 47, 0.12);
+      color: var(--gold-dark);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--white);
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .menu-toggle span {
+      display: block;
+      height: 3px;
+      background: var(--black);
+      margin: 6px 0;
+      border-radius: 999px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(167, 133, 47, 0.16), transparent 34%),
+        linear-gradient(135deg, #ffffff 0%, #fbf7ed 48%, #f1e7cf 100%);
+      padding: 92px 0 70px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto -120px -170px auto;
+      width: 420px;
+      height: 420px;
+      background: rgba(167, 133, 47, 0.12);
+      border-radius: 50%;
+      filter: blur(8px);
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--gold-dark);
+      font-weight: 900;
+      background: rgba(167, 133, 47, 0.12);
+      padding: 8px 16px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(167, 133, 47, 0.22);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 18px;
+      color: var(--black);
+      line-height: 1.22;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 5vw, 4.3rem);
+      font-weight: 900;
+      max-width: 780px;
+    }
+
+    h2 {
+      font-size: clamp(1.85rem, 3.2vw, 2.75rem);
+      font-weight: 900;
+    }
+
+    h3 {
+      font-size: clamp(1.25rem, 2vw, 1.55rem);
+      font-weight: 850;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .lead {
+      font-size: 1.16rem;
+      color: #333333;
+      max-width: 730px;
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 850;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--white);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--border);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(167, 133, 47, 0.25);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      transform: rotate(-1deg);
+    }
+
+    .hero-card img {
+      border-radius: 22px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .hero-note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      background: var(--black);
+      color: var(--white);
+      border-radius: 18px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-head {
+      max-width: 820px;
+      margin-bottom: 38px;
+    }
+
+    .section-head.center {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .gold {
+      color: var(--gold);
+    }
+
+    .intro {
+      background: var(--white);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .rating-box {
+      background: linear-gradient(135deg, var(--black), #333333);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 112px;
+    }
+
+    .rating-box strong {
+      display: block;
+      color: #f1d07a;
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: #ffd35a;
+      font-size: 1.55rem;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .content-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 34px;
+    }
+
+    .content-card a {
+      color: var(--gold-dark);
+      font-weight: 900;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 5px;
+    }
+
+    .product-section {
+      background: var(--light);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .product-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-soft);
+      min-height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 110px;
+      height: 110px;
+      background: rgba(167, 133, 47, 0.10);
+      border-bottom-right-radius: 110px;
+    }
+
+    .product-card h3,
+    .product-card p {
+      position: relative;
+    }
+
+    .product-icon {
+      position: relative;
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: rgba(167, 133, 47, 0.16);
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      color: var(--gold-dark);
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .image-stack {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .image-stack figure {
+      margin: 0;
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      padding: 12px;
+    }
+
+    .image-stack img {
+      border-radius: 20px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .image-stack figure:first-child {
+      grid-column: 1 / -1;
+    }
+
+    .image-stack figure:first-child img {
+      aspect-ratio: 16 / 9;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .why {
+      background: linear-gradient(135deg, #171717, #2a2518);
+      color: var(--white);
+    }
+
+    .why h2,
+    .why h3 {
+      color: var(--white);
+    }
+
+    .why .section-head p {
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .why-item {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .why-item span {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .process {
+      background: var(--white);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      background: linear-gradient(180deg, #ffffff, #fffaf0);
+    }
+
+    .step-number {
+      color: var(--gold);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .cta-strip {
+      background: var(--cream);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cta-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 36px;
+    }
+
+    .facebook-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      color: var(--gold-dark);
+      font-weight: 900;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 5px;
+    }
+
+    .site-footer {
+      background: #111111;
+      color: var(--white);
+      padding: 72px 0 34px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .site-footer h2,
+    .site-footer h3 {
+      color: var(--white);
+    }
+
+    .site-footer p,
+    .site-footer li {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.86);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #f1d07a;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .footer-buttons {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .footer-buttons .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .privacy {
+      margin-top: 44px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .privacy a {
+      color: #f1d07a;
+      font-weight: 800;
+    }
+
+    .bottom-note {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 18px;
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .bottom-note a {
+      color: #f1d07a;
+      font-weight: 800;
+    }
+
+    .floating-actions {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      z-index: 999;
+      display: grid;
+      gap: 12px;
+    }
+
+    .float-btn {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+      border: 2px solid rgba(255,255,255,0.9);
+    }
+
+    .float-call {
+      background: var(--gold);
+    }
+
+    .float-whatsapp {
+      background: #25D366;
+    }
+
+    .float-btn svg {
+      width: 29px;
+      height: 29px;
+      fill: currentColor;
+    }
+
+    @media (max-width: 980px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .main-nav {
+        position: fixed;
+        top: 86px;
+        right: 0;
+        left: 0;
+        height: calc(100dvh - 86px);
+        background: rgba(255, 255, 255, 0.98);
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 22px;
+        border-top: 1px solid var(--border);
+      }
+
+      .main-nav.is-open {
+        display: flex;
+      }
+
+      .main-nav a {
+        padding: 16px;
+        border-radius: 16px;
+        border: 1px solid rgba(167, 133, 47, 0.16);
+      }
+
+      .hero {
+        padding: 64px 0 54px;
+      }
+
+      .hero-grid,
+      .intro-grid,
+      .showcase-grid,
+      .cta-box {
+        grid-template-columns: 1fr;
+      }
+
+      .rating-box {
+        position: static;
+      }
+
+      .product-grid,
+      .why-grid,
+      .steps,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      html {
+        font-size: 18px;
+      }
+
+      .container {
+        width: min(100% - 30px, 1180px);
+      }
+
+      .header-inner {
+        min-height: 78px;
+      }
+
+      .main-nav {
+        top: 78px;
+        height: calc(100dvh - 78px);
+      }
+
+      .hero-card {
+        transform: none;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .product-grid,
+      .why-grid,
+      .steps,
+      .footer-grid,
+      .image-stack {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box,
+      .content-card,
+      .rating-box,
+      .product-card,
+      .step {
+        padding: 24px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .floating-actions {
+        left: 14px;
+        bottom: 14px;
+      }
+
+      .float-btn {
+        width: 54px;
+        height: 54px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" title="דלג לתוכן המרכזי">דלג לתוכן המרכזי</a>
+
+  <header class="site-header" aria-label="תפריט ראשי">
+    <div class="container header-inner">
+      <a class="brand" href="#top" title="חזרה לראש הדף">
+        <span class="brand-mark" aria-hidden="true">א</span>
+        <span>אופיר ספקים</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="פתיחת תפריט" aria-controls="main-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-menu" class="main-nav" aria-label="ניווט בדף">
+        <a href="#branding" title="מעבר לחשיבות מיתוג מוצרי אריזה">מיתוג לעסקים</a>
+        <a href="#products" title="מעבר לפתרונות המיתוג">פתרונות מיתוג</a>
+        <a href="#why-us" title="מעבר ליתרונות אופיר ספקים">למה אנחנו</a>
+        <a href="#process" title="מעבר לתהליך העבודה">תהליך עבודה</a>
+        <a href="#contact" title="מעבר ליצירת קשר">יצירת קשר</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">מיתוג מוצרי אריזה ושילוח לעסקים</div>
+          <h1 id="hero-title">האריזה שלכם יכולה לעבוד בשביל המותג בכל משלוח</h1>
+          <p class="lead">
+            באופיר ספקים אנחנו מספקים פתרונות מיתוג לעסקים על מוצרי אריזה ושילוח: קרטונים מודפסים, סרטי הדבקה ממותגים, שקיות גופייה, מעטפות בלדרות, מעטפות מרופדות ומוצרים נוספים שמלווים את המוצר מהרגע שהוא יוצא מהמחסן ועד שהוא מגיע ללקוח.
+          </p>
+          <div class="hero-actions" aria-label="פעולות מהירות">
+            <a class="btn btn-primary" href="#products" title="צפייה בסוגי מוצרי האריזה למיתוג">לראות פתרונות מיתוג</a>
+            <a class="btn btn-secondary" href="#contact" title="מעבר לפרטי יצירת קשר בפוטר">דברו איתנו על התאמה לעסק</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="דוגמה לשקיות מודפסות">
+          <img src="from web client chat gpt27.4.26 שקיות מודפסות.png" alt="שקיות גופייה מודפסות בצבעים שונים עם מיתוג עסקי">
+          <div class="hero-note">מיתוג נקי, ברור וזכיר על מוצרי אריזה שימושיים</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="branding" class="intro" aria-labelledby="branding-title">
+      <div class="container intro-grid">
+        <aside class="rating-box" aria-label="ציון גוגל מפות">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <strong>4.7</strong>
+          <p>
+            ציון Google Maps נכון לאפריל 2026, מתוך 5 כוכבים.
+          </p>
+          <p>
+            הערך הזה מתחבר למה שאנחנו מאמינים בו: שירות מקצועי, זמינות, אמינות ומענה שמתאים לעסקים שצריכים ספק אריזה שאפשר לעבוד איתו לאורך זמן.
+          </p>
+        </aside>
+
+        <div class="content-card">
+          <h2 id="branding-title">למה מיתוג על מוצרי אריזה חשוב כל כך לעסק?</h2>
+          <p>
+            מוצרי אריזה ושילוח אינם רק אמצעי טכני להעברת מוצר ממקום למקום. בפועל, הם נקודת מפגש חשובה בין העסק לבין הלקוח. כאשר לקוח מקבל משלוח, פותח קרטון, מחזיק שקית או רואה סרט הדבקה עם לוגו ברור, הוא פוגש את המותג פעם נוספת בצורה מוחשית, מסודרת ומקצועית.
+          </p>
+          <p>
+            מיתוג נכון על מוצרי אריזה יוצר נראות אחידה ומחזק את התחושה שהעסק עובד בצורה מסודרת. הוא מתאים לחנויות אונליין, חברות שילוח, מחסנים לוגיסטיים, יצרנים, יבואנים, סיטונאים, מרכזים תפעוליים ועסקים שמוציאים מוצרים ללקוחות על בסיס קבוע.
+          </p>
+          <p>
+            באופיר ספקים אנחנו רואים את האריזה כחלק ממערך השירות של העסק. המטרה אינה להעמיס על האריזה, אלא לייצר מראה ברור, מכובד ומזוהה. לכן אנחנו מתייחסים לסוג המוצר, לגודל האריזה, לשימוש בפועל, לכמות הנדרשת ולשפה הוויזואלית של העסק. כאשר צריך פתרון ממוקד עבור <a href="https://ofirsapakim.co.il/printing-on-cartons/" title="מידע נוסף על הדפסה על קרטונים">הדפסה על קרטונים</a>, סרטי הדבקה, שקיות או מעטפות, חשוב לבחור מוצר שמתאים גם לתפעול וגם לנראות של המותג.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="product-section" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="products-title">פתרונות מיתוג על מוצרי אריזה ושילוח</h2>
+          <p>
+            אנו מספקים מגוון רחב של מוצרי אריזה ושילוח לעסקים, כאשר לכל מוצר יש תפקיד אחר בשרשרת האריזה. הבחירה הנכונה משלבת בין נראות, שימושיות, עמידות ותפעול נוח בשטח.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-icon" aria-hidden="true">01</div>
+            <h3>קרטונים מודפסים וקרטוני שטנץ</h3>
+            <p>
+              קרטון ממותג הוא אחד הכלים החזקים ביותר ליצירת חוויית פתיחה מקצועית. ניתן להתאים את סוג הקרטון, המידה, המבנה וההדפסה לפי אופי המוצר, שיטת השילוח והמסר שהעסק רוצה להעביר. קרטוני שטנץ מתאימים במיוחד לעסקים שרוצים אריזה נוחה, מסודרת ובעלת נראות גבוהה.
+            </p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-icon" aria-hidden="true">02</div>
+            <h3>סרטי הדבקה ממותגים</h3>
+            <p>
+              סרט הדבקה עם לוגו הופך כל סגירת קרטון לנקודת חשיפה נוספת. זהו פתרון יעיל לעסקים ששולחים כמות גדולה של חבילות ורוצים לשמור על נראות אחידה גם בשלב האריזה הסופי. הסרט מסייע גם בזיהוי מהיר של משלוחים ומוסיף תחושת סדר ובקרה בתהליך הלוגיסטי.
+            </p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-icon" aria-hidden="true">03</div>
+            <h3>שקיות גופייה מודפסות</h3>
+            <p>
+              שקיות גופייה ממותגות מתאימות לנקודות מכירה, איסוף עצמי, חלוקת מוצרים, אירועים עסקיים, חנויות ורשתות. כאשר השקית נושאת את שם העסק, היא ממשיכה לייצר נראות גם אחרי הרכישה עצמה. זהו מוצר פשוט, שימושי וברור, אך עם ערך שיווקי גבוה כשהוא מבוצע נכון.
+            </p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-icon" aria-hidden="true">04</div>
+            <h3>מעטפות בלדרות ומעטפות מרופדות</h3>
+            <p>
+              מעטפות שילוח ממותגות מתאימות במיוחד לעסקי E-Commerce, יבואנים, חברות שירות, מעבדות, חנויות אונליין ועסקים ששולחים מוצרים קטנים ובינוניים. מעטפות מרופדות מוסיפות שכבת הגנה למוצר, ומיתוג חיצוני מעניק למשלוח מראה מקצועי יותר מרגע המסירה.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" aria-labelledby="gallery-title">
+      <div class="container showcase-grid">
+        <div class="section-head">
+          <h2 id="gallery-title">מוצרי אריזה שמייצרים נראות גם מחוץ למחסן</h2>
+          <p>
+            עסקים רבים משקיעים באתר, בפרסום ובשירות, אך שוכחים שהמפגש הפיזי עם האריזה משפיע מאוד על הרושם הסופי. אריזה ממותגת מעבירה מסר של רצינות, עקביות ואכפתיות. היא יכולה להיות עדינה, מינימלית ומדויקת, ועדיין לחזק את שם העסק בכל משלוח.
+          </p>
+          <p>
+            לצד שירותי המיתוג, אופיר ספקים מספקת סל רחב של מוצרי אריזה ושילוח לעסקים: חומרי אריזה, סרטי קשירה, מוצרי ריפוד להגנה על מוצרים, מעטפות נייר, ניילון בועות, ציוד אריזה ומוצרים משלימים לעבודה שוטפת. כך ניתן לרכז צרכים רבים מול ספק אחד, עם הבנה רחבה של עולם האריזה.
+          </p>
+        </div>
+
+        <div class="image-stack">
+          <figure>
+            <img src="Client-17.08.2025-סרטי-הדבקה-מודפסים-סרטי-הדבקה-עם-לוגו.jpg" alt="סרטי הדבקה מודפסים עם לוגו לעסקים על משטח עבודה">
+            <figcaption>סרטי הדבקה מודפסים למיתוג משלוחים וקרטונים.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="client11.2.26-מעטפות-בלדרות-מודפסו-1.jpg" alt="מעטפות בלדרות מרופדות ממותגות בצבע בהיר">
+            <figcaption>מעטפות בלדרות ומעטפות מרופדות עם הדפסה.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="from web client chat gpt27.4.26 שקיות מודפסות.png" alt="שקיות ניילון מודפסות עם לוגו למיתוג עסקי">
+            <figcaption>שקיות מודפסות למותגים, חנויות ועסקים.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head center">
+          <h2 id="why-title">למה לבחור באופיר ספקים למיתוג מוצרי האריזה?</h2>
+          <p>
+            אופיר ספקים פועלת בתחום האריזה ומוצרי השילוח למעלה מ-25 שנה. המרכז הלוגיסטי שלנו ממוקם באזור תעשייה לב הארץ, ואנו נותנים שירות לאלפי עסקים בישראל, בהם חברות שילוח גדולות, סיטונאים, מרכזים לוגיסטיים, יצרנים, יצואנים וחברות E-Commerce.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-item">
+            <span aria-hidden="true">✓</span>
+            <h3>ניסיון מוכח</h3>
+            <p>
+              היכרות רחבה עם צרכים של עסקים, מחסנים, יצרנים וחברות שילוח, לצד יכולת להתאים פתרונות אריזה למציאות התפעולית.
+            </p>
+          </article>
+
+          <article class="why-item">
+            <span aria-hidden="true">✓</span>
+            <h3>סל מוצרים רחב</h3>
+            <p>
+              קרטונים, סרטי הדבקה, שקיות, מעטפות, מוצרי ריפוד, ניילון בועות ומוצרים משלימים לעסק במקום אחד.
+            </p>
+          </article>
+
+          <article class="why-item">
+            <span aria-hidden="true">✓</span>
+            <h3>שירות לקוחות זמין</h3>
+            <p>
+              אנחנו זמינים לשאלות, התאמות והכוונה, כדי שהלקוח יקבל מוצר שמתאים לצורך ולא רק מוצר שנראה טוב בקטלוג.
+            </p>
+          </article>
+
+          <article class="why-item">
+            <span aria-hidden="true">✓</span>
+            <h3>אספקה בפריסה ארצית</h3>
+            <p>
+              זמני אספקה מהירים, שירות מקצועי ואמין, ומענה לעסקים שצריכים רציפות באספקת מוצרי האריזה שלהם.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="process-title">איך אנחנו מתאימים מוצר מיתוג נכון לעסק?</h2>
+          <p>
+            התאמת מוצר מיתוג לא מתחילה רק מהלוגו. היא מתחילה מהבנה של השימוש בפועל: מה אורזים, לאן שולחים, מהי כמות ההזמנות, מה רמת ההגנה הנדרשת ואיזה רושם העסק רוצה ליצור.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">01</div>
+            <h3>מבינים את סוג הפעילות</h3>
+            <p>
+              אנו בודקים האם מדובר בחנות אונליין, מחסן לוגיסטי, רשת חנויות, יצרן, יבואן או עסק שמבצע חלוקה שוטפת. לכל פעילות יש צרכים שונים.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">02</div>
+            <h3>מתאימים מוצר וכמות</h3>
+            <p>
+              לאחר הבנת הצורך בוחרים את סוג מוצר האריזה: קרטון, סרט הדבקה, שקית, מעטפה או מוצר שילוח אחר, ומתייחסים לכמות ולתדירות השימוש.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">03</div>
+            <h3>שומרים על מיתוג נקי</h3>
+            <p>
+              המטרה היא ליצור מיתוג ברור, קריא ומכובד. לא כל מוצר צריך הדפסה עמוסה; לעיתים דווקא פתרון נקי ומדויק יוצר תוצאה חזקה יותר.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip" aria-labelledby="cta-title">
+      <div class="container cta-box">
+        <div>
+          <h2 id="cta-title">רוצים להפוך את האריזה לחלק מהנראות של העסק?</h2>
+          <p>
+            נשמח לעזור לכם לבחור את מוצרי האריזה המתאימים, להבין אילו מוצרים כדאי למתג, ולבנות פתרון שמתאים לשימוש היומיומי של העסק.
+          </p>
+          <a class="facebook-link" href="https://www.facebook.com/ofirsapakim22" title="מעבר לעמוד הפייסבוק של אופיר ספקים" target="_blank" rel="noopener">
+            לעמוד הפייסבוק של אופיר ספקים
+          </a>
+        </div>
+        <a class="btn btn-primary" href="#contact" title="מעבר לפרטי יצירת קשר עם אופיר ספקים">לפרטי יצירת קשר</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer" aria-labelledby="footer-title">
+    <div class="container">
+      <div class="footer-grid">
+        <section aria-labelledby="footer-title">
+          <h2 id="footer-title">אופיר ספקים</h2>
+          <p>
+            חברה מובילה בתחום האריזה ומוצרי השילוח בישראל, עם ניסיון של למעלה מ-25 שנה, סל מוצרים מגוון, שירות מקצועי ופתרונות מיתוג לעסקים.
+          </p>
+        </section>
+
+        <section aria-labelledby="footer-contact">
+          <h3 id="footer-contact">יצירת קשר</h3>
+          <div class="footer-buttons">
+            <a class="btn btn-primary" href="tel:036522422" title="התקשרו לאופיר ספקים בטלפון 03-652-2422">
+              התקשרו: 03-652-2422
+            </a>
+            <a class="btn btn-secondary" href="https://wa.me/972527773250" title="שליחת הודעת וואטסאפ לאופיר ספקים במספר 052-777-3250" target="_blank" rel="noopener">
+              WhatsApp: 052-777-3250
+            </a>
+          </div>
+          <p>ט.ל.ח</p>
+        </section>
+
+        <section aria-labelledby="footer-nav">
+          <h3 id="footer-nav">ניווט מהיר</h3>
+          <ul class="footer-links">
+            <li><a href="#branding" title="מעבר להסבר על מיתוג מוצרי אריזה">מיתוג מוצרי אריזה</a></li>
+            <li><a href="#products" title="מעבר לפתרונות מיתוג על מוצרים">פתרונות מיתוג</a></li>
+            <li><a href="#why-us" title="מעבר ליתרונות אופיר ספקים">למה אופיר ספקים</a></li>
+            <li><a href="#process" title="מעבר לתהליך העבודה">תהליך העבודה</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="footer-social">
+          <h3 id="footer-social">קישורים שימושיים</h3>
+          <ul class="footer-links">
+            <li><a href="https://ofirsapakim.co.il/" title="מעבר לאתר אופיר ספקים" target="_blank" rel="noopener">אתר אופיר ספקים</a></li>
+            <li><a href="https://www.facebook.com/ofirsapakim22" title="מעבר לפייסבוק של אופיר ספקים" target="_blank" rel="noopener">פייסבוק אופיר ספקים</a></li>
+            <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" title="מעבר למדיניות הפרטיות של GitHub" target="_blank" rel="noopener">מדיניות הפרטיות של GitHub</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="privacy">
+        <p>
+          אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסי השארת פרטים ואינו אוסף מידע אישי באופן ישיר. ייתכן ונעשה שימוש בכלי סטטיסטיקה וניתוח תנועה כגון cookies לצורך שיפור חוויית המשתמש.
+        </p>
+        <p>
+          האתר מאוחסן ומופעל באמצעות פלטפורמת GitHub, וייתכן כי נתונים טכניים נאספים בהתאם למדיניות הפלטפורמה. ניתן לעיין במדיניות הפרטיות של GitHub בקישור הבא:
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" title="מדיניות הפרטיות הכללית של GitHub" target="_blank" rel="noopener">GitHub General Privacy Statement</a>.
+        </p>
+      </div>
+
+      <div class="bottom-note">
+        <span>נבנה עם היררכיית כותרות, קישורי עוגן, ALT לתמונות, TITLE לקישורים, גודל טקסט מינימלי של 18px וניגודיות משופרת.</span>
+        <a title="נבנה על ידי פרוסייטס" class="" href="https://prosites.co.il/" target="_blank" rel="noopener">נבנה על ידי פרוסייטס</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-actions" aria-label="כפתורי יצירת קשר צפים">
+    <a class="float-btn float-call" href="tel:036522422" title="התקשרו לאופיר ספקים בטלפון 03-652-2422" aria-label="התקשרו לאופיר ספקים">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+    </a>
+
+    <a class="float-btn float-whatsapp" href="https://wa.me/972527773250" title="שליחת הודעת וואטסאפ לאופיר ספקים במספר 052-777-3250" target="_blank" rel="noopener" aria-label="שליחת וואטסאפ לאופיר ספקים">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M19.11 17.2c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.19.29-.76.95-.93 1.14-.17.19-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.75-1.63-2.04-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43s1.05 2.82 1.19 3.01c.15.19 2.06 3.14 4.99 4.4.7.3 1.24.48 1.66.61.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.97-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34zM16.03 3C8.86 3 3.03 8.82 3.03 15.98c0 2.29.6 4.53 1.75 6.5L3 29l6.68-1.75c1.9 1.04 4.04 1.59 6.35 1.59 7.16 0 12.98-5.82 12.98-12.98S23.19 3 16.03 3zm0 23.63c-2.06 0-4.08-.55-5.84-1.58l-.42-.25-3.96 1.04 1.06-3.86-.27-.44c-1.11-1.78-1.7-3.83-1.7-5.94 0-6.13 4.99-11.12 11.13-11.12 2.97 0 5.76 1.16 7.86 3.26 2.1 2.1 3.26 4.89 3.26 7.86 0 6.14-4.99 11.13-11.12 11.13z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#main-menu');
+    const navLinks = nav.querySelectorAll('a');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      document.body.classList.toggle('menu-open', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'סגירת תפריט' : 'פתיחת תפריט');
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'פתיחת תפריט');
+      });
+    });
+  </script>
+</body>
+</html>
